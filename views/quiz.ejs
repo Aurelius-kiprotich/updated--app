@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+
+    <%- include('partials/nav') %>
+
+    <script src="/js/questions.js" type="module"></script>
+    <main id="questions" class="container">
+        <form action="/quiz" method="post">
+            
+            <input type="hidden" name="markingScheme" id="markingScheme" value="">
+        </form>
+    </main>
+
+
+<%- include('partials/footer') %>

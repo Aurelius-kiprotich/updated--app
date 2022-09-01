@@ -1,0 +1,236 @@
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(Montserrat-Light.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat-Regular;
+}
+
+.container {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.error {
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+header {
+    background-color: #EAEFF2;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #00E0D4;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+    font-size: 18px;
+}
+
+nav li:hover {
+    border-bottom: 2px solid #00E0D4;
+}
+
+#login-form, #signup-form {
+    
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+#login-form form, #signup-form form {
+    background-color: #EAEFF2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#login-form h1, #signup-form h1 {
+    text-align: center;
+    font-size: 26px;
+}
+
+#login-form input, #signup-form input {
+    font-size: 25px;
+    padding: 8px;
+}
+
+#login-form input[type='submit'], #signup-form input[type='submit'] {
+    background-color: #00E0D4;
+    border: 1px solid #00E0D4;
+    font-family: Montserrat-Bold;
+    letter-spacing: 2px;
+}
+
+#login-form a, #signup-form a {
+    text-decoration: none;
+    font-family: Montserrat-Bold;
+    color: #000;
+}
+
+#profile {
+    text-align: center;    
+}
+
+#profile img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+#profile a {
+    text-decoration: none;
+    background-color: #008000;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#edit-profile form {
+    margin-top: 15px;
+}
+
+#edit-profile .form-input {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#edit-profile .form-input * {
+    font-size: 20px;
+}
+
+#edit-profile .form-input label {
+    width: 20%;
+}
+
+#edit-profile input[type='submit'] {
+    text-decoration: none;
+    background-color: #008000;
+    border: 1px solid #008000;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#questions {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+#questions .question {
+    font-family: Montserrat-Bold;
+    font-size: 23px;
+    margin: 10px 0;
+}
+
+#questions .choice {
+    background-color: #e7e9eb;
+    padding: 8px;
+    margin-bottom: 2px;
+    font-size: 17px;
+}
+
+#questions .choice:hover {
+    background-color: #c9cacb;
+}
+
+#questions input[type="submit"] {
+    background-color: #00E0D4;
+    border: 1px solid #00E0D4;
+    font-family: Montserrat-Bold;
+    letter-spacing: 2px;
+    font-size: 25px;
+    color: #fff;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+#dashboard div {
+    height: 200px;
+    width: 200px;
+    background-color: #e7e9eb;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+
+#dashboard a {
+    text-decoration: none;
+    color: #05445E;
+}
+
+#results .correct-answer {
+    color: #008000;
+    font-family: Montserrat-Bold ;
+}
+#results .wrong-answer {
+    color: #800000;
+    font-family: Montserrat-Bold ;
+}
+#admin-panel .student {
+    display: flex;
+    margin: 10px 0;
+    background-color: #e7e9eb;
+    padding-top: 5px;
+    padding-bottom: 5pxb;
+    border-radius: 10px;
+    align-items: center;
+    font-size: 25px;
+    justify-content: space-evenly;
+}
+#admin-panel .student * {
+    width: 15%;
+
+}
+
+#admin-panel .pic {
+    height:70px;
+    width: 70px;
+    border-radius: 50%;
+}
+#admin-panel .pass {
+    background-color: #008000;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: max-content;
+}
+#admin-panel .fail {
+    background-color: #db9f63;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: max-content;
+}
