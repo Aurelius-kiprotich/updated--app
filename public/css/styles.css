@@ -62,6 +62,9 @@ nav li:hover {
     display: grid;
     place-items: center;
 }
+#login-form #login-admin {
+    color: #00E0D4;
+}
 
 #login-form form, #signup-form form {
     background-color: #EAEFF2;
